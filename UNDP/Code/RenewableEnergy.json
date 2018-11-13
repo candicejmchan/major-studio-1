@@ -1,0 +1,644 @@
+[
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Kirirom 1 and 3 Hydropower Stations",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Kirirom 1 and 3 Hydropower Stations",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "ABC Phnom Penh Biomass Plant",
+    "Technology": "Biomass"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Kamchay Hydropower Station",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Stung Atay River Hydropower Station",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Orussei Hydroelectric Power Plant",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Stung Russey Chrum Krom Hydropower Plant",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "East Asia and Pacific",
+    "Country": "Cambodia",
+    "Project name": "Stung Tatay Hydropower Plant",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Angola",
+    "Project name": "Chicapa Hydroelectric Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Angola",
+    "Project name": "Luapasso Mini Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Burkina Faso",
+    "Project name": "Hydro-Afrique Hydroelectric Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Cameroon",
+    "Project name": "Hydromine Grand Eweng HPP",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Cameroon",
+    "Project name": "Hydromine Mousere HPP",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Cape Verde",
+    "Project name": "Electra Cabeolica Wind Project",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Congo",
+    "Project name": "Sounda S.A.",
+    "Technology": "Geothermal"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Ethiopia",
+    "Project name": "Daewoo Aysha Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Gabon",
+    "Project name": "CODER Ngounie Imperatrice SHPP",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Gabon",
+    "Project name": "CODER FE II SHPP",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Ghana",
+    "Project name": "Nzema Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Ghana",
+    "Project name": "AIE Ankobra HPPs",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Ghana",
+    "Project name": "Clenergen Gasification Biomass Plant",
+    "Technology": "Biomass"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "Ormat Olkaria III Geothermal Power Plant",
+    "Technology": "Geothermal"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "Ormat Olkaria III Geothermal Power Plant",
+    "Technology": "Geothermal"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "Ormat Olkaria III Geothermal Power Plant",
+    "Technology": "Geothermal"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "Mumias Power Plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "Aldwych Lake Turkana Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "SDE Wave Energy Kenya",
+    "Technology": "Wave"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Kenya",
+    "Project name": "Aeolus - Ngong Wind Project",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Liberia",
+    "Project name": "Buchanan Biomass Plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Madagascar",
+    "Project name": "Hydelec Madagascar S.A.",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mauritius",
+    "Project name": "Deep River Beau Champ",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mauritius",
+    "Project name": "Deep River Beau Champ",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mauritius",
+    "Project name": "FUEL power plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mauritius",
+    "Project name": "St. Aubin Power Project",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mauritius",
+    "Project name": "Suzlon Plaine Sophie Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mauritius",
+    "Project name": "Aerowatt Plaine des Roches Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Mozambique",
+    "Project name": "HMNK Mphanda Nkuwa HPP",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Namibia",
+    "Project name": "Lower Orange Mini Hydropower Plants",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Namibia",
+    "Project name": "UAG Diaz Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Namibia",
+    "Project name": "InnoVent Walvis Bay Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Nigeria",
+    "Project name": "Dadin Kowa Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Rwanda",
+    "Project name": "Rwanda Mountain Tea Giciye SHPP",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "S�o Tom� and Principe",
+    "Project name": "Sinergie concession contract",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Senegal",
+    "Project name": "Taiba Diaye Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Sierra Leone",
+    "Project name": "Addax Biomass Plant",
+    "Technology": "Biomass"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Bethlehem Hydro",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Darling Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Witkop Solar Power Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "ACED Cookhouse Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Jeffrey's Bay Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Acciona - Gouda wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Abengoa KaXu Solar I CSP Solar Plant",
+    "Technology": "Solar, CSP"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Sumitomo Dorper Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Kathu Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Old Mutual Hopefield Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Standard Bank Kouga Oyster Bay Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Gestamp Karoo Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Solar Capital De Aar Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "SolarReserve Letsatsi Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Jasper Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Solar Capital De Aar3 PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "SolarReserve Lesedi Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Shishen Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Scatec Kalkbuilt Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Dreunberg Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Boshoff Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Abengoa Khi Solar I CSP Solar Plant",
+    "Technology": "Solar, CSP"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Mainstream Droogfontein Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "ACWA - Bokport CSP",
+    "Technology": "Solar, CSP"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Mainstream De Aar Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Soitec CPV Solar Plant",
+    "Technology": "Solar, CSP"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Linde Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "MEMC Wiktop Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "MEMC Soutpan Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Biotherm - Dassiesklip Wind",
+    "Technology": "Wind, Offshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Metro Wind Van Staadens Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Old Mutual - Herbert Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Mulilo Prieska Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Biotherm - Aries Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Konkoonsies Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Old Mutual - Greefspan Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Mulilo De Aar Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Upington Solar PV",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "South Africa",
+    "Project name": "Inspired RustMo1 Solar Plant",
+    "Technology": "Solar, PV"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Tanzania",
+    "Project name": "Tanwat Wood-Fired Power Plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Tanzania",
+    "Project name": "Makambako Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Tanzania",
+    "Project name": "Singida Wind Farm",
+    "Technology": "Wind, Onshore"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Uganda Electricity Generation Company Limited",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Kakira cogeneration plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Bujagali Hydro Project",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Bugoye Hydro Electric Power Project",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "ECO Ishasha Mini Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Mpanga Hydro Power Project",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Buseruka Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Kinyara Cogeneration Plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Kinyara Cogeneration Plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "TBE Kampala Biomass Plant",
+    "Technology": "Biomass"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "MISA Kabale Peat Biomass Plant",
+    "Technology": "Waste"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "SAEMS Nyamwamba SHPP",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Uganda",
+    "Project name": "Hydromax Waki Mini Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zambia",
+    "Project name": "Lunsemfwa Hydro Power",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zambia",
+    "Project name": "TATA Itezhi-Tezhi HPP",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zambia",
+    "Project name": "Sinohydro Kafue Gorge Lower HPP",
+    "Technology": "Hydro, Large (>50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zambia",
+    "Project name": "Kabompo Gorge Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zimbabwe",
+    "Project name": "GeoBase Gwanda CSP Solar Plant",
+    "Technology": "Solar, CSP"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zimbabwe",
+    "Project name": "Nyangani Honde SHPP",
+    "Technology": "Hydro, Small (<50MW)"
+  },
+  {
+    "Region": "Sub-Saharan Africa",
+    "Country": "Zimbabwe",
+    "Project name": "Mutirikwi Mini Hydropower Plant",
+    "Technology": "Hydro, Small (<50MW)"
+  }
+]

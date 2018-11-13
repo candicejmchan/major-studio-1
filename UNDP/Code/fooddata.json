@@ -1,0 +1,434 @@
+[
+  {
+    "Country": "Algeria",
+    "Region": "North Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 6.41212303238635,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Angola",
+    "Region": "North Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 14.9974976698457,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Morocco",
+    "Region": "North Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 6.65437542298148,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Libya",
+    "Region": "North Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Tunisia",
+    "Region": "North Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 5.55243146344527,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Egypt, Arab Rep.",
+    "Region": "North Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 6.71957571953624,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Cameroon",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 15.0708407522494,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Central African Republic",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Congo",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Chad",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 8.63992375367564,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Gabon",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "Region": "Central Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 9.05430612600085,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Burundi",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 4.36273626864158,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Djibouti",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Ethiopia",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 5.12637129958615,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Eritrea",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Kenya",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 4.63926433686256,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Rwanda",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 7.53238165583229,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Somalia",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Sudan",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 4.62523029676315,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Uganda",
+    "Region": "East Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 7.39511423915745,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Nigeria",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 10.3193238219059,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Cote d'Ivoire",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 8.50704317275092,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Ghana",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 19.1804487741475,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Senegal",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 4.44919115575977,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Togo",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Burkina Faso",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 5.33770847926034,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Cape Verde",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Gambia, The",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Guinea",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Liberia",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Mali",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 4.73472012555378,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Sierra Leone",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 34.1363369073955,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Niger",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 10.9215297904695,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Mauritania",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Benin",
+    "Region": "West Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 11.7349192385889,
+    "Existence of Adequate Crop Storage Facilities": 0,
+    "": ""
+  },
+  {
+    "Country": "Eswatini",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Guyana",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Botswana",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 4.04708904862877,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Comoros",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Lesotho",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Madagascar",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 6.34639593043767,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Malawi",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 9.43554112667258,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Tanzania",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 8.48804760475434,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Mauritius",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Mozambique",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 5.28424962864366,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Namibia",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "Seychelles",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": "",
+    "": ""
+  },
+  {
+    "Country": "South Africa",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 3.48554375076797,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Zambia",
+    "Region": "Southern Africa",
+    "Year": 2016,
+    "Food Loss (Tonnes)": 2.40212111781913,
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  },
+  {
+    "Country": "Zimbabwe",
+    "Region": "Southern Africa",
+    "Year": 1985,
+    "Food Loss (Tonnes)": "",
+    "Existence of Adequate Crop Storage Facilities": 1,
+    "": ""
+  }
+]

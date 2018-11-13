@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(37,37,37);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+svg {
+  /*border: 1px solid black;*/
+}
+
+.africa { fill: #636363 }
+.eastern-africa { fill: #1b9e77 }
+.western-africa { fill: #d95f02 }
+.central-africa { fill: #7570b3 }
+.northern-africa { fill: #e7298a  }
+.southern-africa { fill: #e6ab02 }
+
+.africa-bk { background-color: #636363 }
+.eastern-africa-bk { background-color: #1b9e77 }
+.western-africa-bk { background-color: #d95f02 }
+.central-africa-bk { background-color: #7570b3 }
+.northern-africa-bk { background-color: #e7298a  }
+.southern-africa-bk { background-color: #e6ab02 }
+
+.africa-de { background-color: rgba(99,99,99,0.5) }
+.eastern-africa-de { background-color: rgba(27,158,119, 0.5) }
+.western-africa-de { background-color: rgba(217,95,2, 0.5) }
+.central-africa-de { background-color: rgba(117,112,179, 0.5) }
+.northern-africa-de { background-color: rgba(231,41,138,0.5)  }
+.southern-africa-de { background-color: rgba(230,171,2, 0.5) }
+
+.region-dropdown {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.region-dropdown .btn {
+  /*background-color: red;*/
+}
+
+#country-box-container {
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: 270px;
+}
+
+.country-box {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.country-box > div {
+  /*transform: rotate(-90deg) translate(-70px, 0px);
+  -moz-transform: rotate(-90deg) translate(70px, 0px);
+  -ms-transform: rotate(-90deg) translate(70px, 0px);
+  -o-transform: rotate(-90deg) translate(70px, 0px);*/   
+}
+
+.countries :hover {
+  fill: #636363;
+  opacity: 0.6;
+}
+
+
+.countries {
+    fill: black;
+    stroke: white;
+    stroke-width: 1px;
+}
+
+.country-borders {
+  fill: none;
+  stroke: white;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.africa { cursor: pointer; }
+
+.reduce-opacity {
+  opacity: 0.5;
+}
+
+#country-details-container {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.total-population, .physicians, .pharmacists {
+  margin-left: 40px;
+}
