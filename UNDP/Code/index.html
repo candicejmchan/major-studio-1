@@ -25,10 +25,13 @@
       </li>
     </ul>
   </div>
-</nav>    
+</nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-2">
+                <div id="country-box-container"></div>
+            </div>
+            <!-- <div class="col-4">
                 <div id="country-details-container">
                     <h2 class="country-name"></h2>
                     <h4>Population</h4>
@@ -41,30 +44,69 @@
                         <span class="food-loss"></span>
                         <span class="food-loss-year"></span>
                     </p>
-                    <h4>Adequate Excistence of Crop Facilities</h4>
+                    <h4>Adequate Existence of Crop Facilities</h4>
                     <p>
                         <span class="crop-facilities"></span>
                         <span class="crop-facilities-year"></span>
-                    </p>                    
+                    </p>
                     <h4>Access To Electricity</h4>
                     <ul class="access-electricity"></ul>
                     <h4>Renewable Energy Projects</h4>
                     <ul class="renewable-energy"></ul>
                 </div>
-            </div>            
-            <div class="col-2">
-                <div id="country-box-container"></div>
+            </div>  -->
+            <div class="col-4 details-container">
+                <div id="country-details-container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="total-population"></p>
+                            <p class="population-title">Population <span class="population-year"></span></p>
+                        </div>
+                        <div class="col-1">
+                            <div class="separator"></div>
+                        </div>
+                        <div class="col-3">
+                            <!--<p class="access-electricity"></p>
+                            <p class="access-electricity-title">Total Access To Electricity (2016)</p> -->
+                            <p class="selected-year-value"></p>
+                            <div class="dropdown">
+                              <button class="btn btn-outline-secondary dropdown-toggle selected-year-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Year
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="year-menu">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="separator"></div>
+                        </div>
+                        <div class="col-3">
+                            <div class="float-right">
+                                <p class="food-loss"></p>
+                                <p class="food-loss-title">Food Loss in Tonnes <span class="food-loss-year"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="bubble-chart"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 chart-container">
                 <div id="chart"></div>
             </div>
         </div>
     </div>
+    <div class="tooltip-d3"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js@1.14.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>    
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script src="helpers.js"></script>
+    <script src="map.js"></script>
+    <script src="bubblechart.js"></script>
 </body>
