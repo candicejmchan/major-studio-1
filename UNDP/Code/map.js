@@ -84,6 +84,12 @@ const drawMap = (data) => {
 
             const className = regions.filter(k => k.value.indexOf(obj.region) !== -1)[0].className;
 
+            const classNames = _.map(regions, 'className');
+
+            classNames.forEach(cls => {
+                d3.selectAll('.country-box').classed(`${cls}-bk`, false);
+            });
+
             countryClicked[obj.country_code] = !countryClicked[obj.country_code];
             if(countryClicked[obj.country_code]) {
                 d3.selectAll('.africa').classed('reduce-opacity', true);
@@ -94,6 +100,8 @@ const drawMap = (data) => {
                 d3.select('#country-details-container').attr('class', '');
                 // d3.select('#country-details-container').classed(`${className}-de`,true);
                 d3.select('#country-details-container').style('display', 'block');
+
+                d3.select(`.${obj.country_code}-box`).classed(`${className}-bk`, true);
 
                 setMapSize('small', d.country_code);
                 createSolarInfoBelowSmallMap(className);
@@ -106,6 +114,9 @@ const drawMap = (data) => {
                 d3.selectAll('.country-box').classed('reduce-opacity', false);
                 d3.select('#country-details-container').attr('class', '');
                 d3.select('#country-details-container').style('display', 'none');
+
+                d3.select(`.${d.country_code}-box`).classed(`${className}-bk`, false);
+
                 setMapSize('big');
             }
         });
@@ -170,8 +181,8 @@ const removeSolarInfoBelowSmallMap = () => {
 
 const createSolarInfoBelowSmallMap = (className) => {
     const elements = [
-        { title: 'PV', unit: 'TWh/year', value: 26183, id: 'solar-pv', x: 0, y: 0 },
-        { title: 'CSP', unit: 'TWh/year', value: 26183, id: 'solar-csp', x: 150, y: 0 }
+        { title: 'PV', unit: 'TWh/year', value: '-', id: 'solar-pv', x: 0, y: 0 },
+        { title: 'CSP', unit: 'TWh/year', value: '-', id: 'solar-csp', x: 150, y: 0 }
     ];
 
     d3.select('.solar-info-container').remove();
@@ -323,8 +334,9 @@ const createCountryBoxes = (data) => {
     countryBox.enter()
     .append('div')
     .attr('class', d => {
-        const row = regions.filter(k => k.value.indexOf(d.region) !== -1)[0];
-        return `country-box ${d.country_code}-box ${row.className}-bk`
+        return `country-box ${d.country_code}-box`;
+        // const row = regions.filter(k => k.value.indexOf(d.region) !== -1)[0];
+        // return `country-box ${d.country_code}-box ${row.className}-bk`
     })
     .append('div')
     .text(d => d.country_name)
@@ -332,7 +344,15 @@ const createCountryBoxes = (data) => {
         // console.log(d3.event.x, d3.event.y);
         // d3.select('#country-details-container').style('top', `${d3.event.y}px`);
 
+        // d3.selectAll('.country-box').attr('class', `country-box ${d.country_code}-box`);
+
         const className = regions.filter(k => k.value.indexOf(d.region) !== -1)[0].className;
+
+        const classNames = _.map(regions, 'className');
+
+        classNames.forEach(cls => {
+            d3.selectAll('.country-box').classed(`${cls}-bk`, false);
+        });
 
         countryClicked[d.country_code] = !countryClicked[d.country_code];
         if(countryClicked[d.country_code]) {
@@ -346,6 +366,8 @@ const createCountryBoxes = (data) => {
             // d3.select('#country-details-container').classed(`${className}-de`,true);
             d3.select('#country-details-container').style('display', 'block');
 
+            d3.select(`.${d.country_code}-box`).classed(`${className}-bk`, true);
+
             setMapSize('small', d.country_code);
             createSolarInfoBelowSmallMap(className);
 
@@ -358,6 +380,8 @@ const createCountryBoxes = (data) => {
 
             d3.select('#country-details-container').attr('class', '');
             d3.select('#country-details-container').style('display', 'none');
+
+            d3.select(`.${d.country_code}-box`).classed(`${className}-bk`, false);
 
             setMapSize('big');
         }
@@ -373,27 +397,28 @@ const showCountryDetails = (opts) => {
 
     d3.select('.country-name').text(opts.country_name.toUpperCase());
     if(opts.populationData){
-         d3.select('.total-population').text( format(opts.populationData['2017']));
-         d3.select('.population-year').text('(2017)');
+         d3.select('.total-population').text( format(opts.populationData[SELECTED_YEAR]));
+         d3.select('.population-year').text(`(${SELECTED_YEAR})`);
     }
-    // if(opts.foodData){
-    //     if(opts.foodData.food_loss) {
+    if(opts.foodData){
+        //if(opts.foodData.food_loss) {
     //         d3.select('.food-loss').text(opts.foodData.food_loss.toFixed(2));
     //     } else {
     //         d3.select('.food-loss').text(opts.foodData.food_loss || '-');
     //     }
 
-    //     d3.select('.crop-facilities').text(opts.foodData.crop_facilities || '');
-    //     // if(opts.foodData.year_food_loss)
-    //     //     d3.select('.food-loss-year').text(`(${opts.foodData.year_food_loss})`);
-    //     // else
-    //     //     d3.select('.food-loss-year').text('');
+       // d3.select('.crop-facilities').text(opts.foodData.crop_facilities || '');
+        // if(opts.foodData.year_food_loss)
+        //     d3.select('.food-loss-year').text(`(${opts.foodData.year_food_loss})`);
+        // else
+        //     d3.select('.food-loss-year').text('');
 
-    //     if(opts.foodData.year_crop_facilities)
-    //         d3.select('.crop-facilities-year').text(`(${opts.foodData.year_crop_facilities})`);
-    //     else
-    //         d3.select('.crop-facilities-year').text('');
-    // }
+        if(opts.foodData.year_crop_facilities)
+            d3.select('.crop-facilities').text('Yes');
+        else
+            d3.select('.crop-facilities').text('-');
+    }
+
 
     /*if(opts.energyData) {
         const renew = d3.select('.renewable-energy').selectAll('li')

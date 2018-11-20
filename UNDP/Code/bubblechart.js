@@ -13,10 +13,11 @@
 
 
     const rscale = d3.scaleLinear()
-        .range([5, 10]);
+        .range([5, 15]);
 
     const colorScale = d3.scaleLinear()
-        .range(['#ffffcc', '#fc4e2a'])
+        //.range(['#ffffcc', '#fc4e2a'])
+        .range(['#2A373D','#FAFAFA'])
 
     const xAxis = d3.axisBottom(xscale);
     const yAxis = d3.axisLeft(yscale)
@@ -29,7 +30,7 @@
         // const countryData = filterDataByCountry(data, country_code);
         const yearData = filterDataByYear(alphisData, accessEnergyData, SELECTED_YEAR);
 
-        console.log(yearData);
+        // console.log(yearData);
 
         xscale.domain(d3.extent(yearData, d => d.access_electricity));
         yscale.domain(d3.extent(yearData, d => d.total));
@@ -96,7 +97,7 @@
     };
 
     const drawChart = (data, country_code) => {
-        console.log(data);
+        // console.log(data);
         const grp = svg.selectAll('.bubble')
         .data(data).enter()
         .append('g').attr('class', 'bubble')
@@ -112,14 +113,14 @@
                        <tr><th>Value Chain Stage</th><th>Amount Loss(t)</th></tr>
                    </thead>
                    <tbody>
-                    <tr><td>Farm storage</td><td>${d['Farm storage'].toFixed(2)}</td></tr>
-                    <tr><td>Harvesting/field drying</td><td>${d['Harvesting/field drying'].toFixed(2)}</td></tr>
-                    <tr><td>Market storage</td><td>${d['Market storage'].toFixed(2)}</td></tr>
+                  <tr><td>Harvesting/field drying</td><td>${d['Harvesting/field drying'].toFixed(2)}</td></tr>
                     <tr><td>Platform drying</td><td>${d['Platform drying'].toFixed(2)}</td></tr>
                     <tr><td>Threshing and Shelling</td><td>${d['Threshing and Shelling'].toFixed(2)}</td></tr>
-                    <tr><td>Transport to farm</td><td>${d['Transport to farm'].toFixed(2)}</td></tr>
-                    <tr><td>Transport to market</td><td>${d['Transport to market'].toFixed(2)}</td></tr>
                     <tr><td>Winnowing</td><td>${d['Winnowing'].toFixed(2)}</td></tr>
+                    <tr><td>Transport to farm</td><td>${d['Transport to farm'].toFixed(2)}</td></tr>
+                    <tr><td>Farm storage</td><td>${d['Farm storage'].toFixed(2)}</td></tr>
+                    <tr><td>Transport to market</td><td>${d['Transport to market'].toFixed(2)}</td></tr>
+                    <tr><td>Market storage</td><td>${d['Market storage'].toFixed(2)}</td></tr>
                    </tbody>
                </table>
             </div>`;
@@ -139,6 +140,7 @@
 
         grp.append('circle')
         .attr('r', d => rscale(d.total))
+        // .style('stroke', 'blue')
         .style('fill', d => {
             return colorScale(d["Harvesting/field drying"]);
             /*if(d.country_code === country_code) {
@@ -156,7 +158,7 @@
         .style('stroke', '#ffffff');
 
         const countryExists = _.find(data, d => d.country_code === country_code);
-        console.log(countryExists);
+        // console.log(countryExists);
 
         if(!countryExists) {
             d3.select('#bubble-chart svg').append('text')

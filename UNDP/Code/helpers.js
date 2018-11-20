@@ -9,7 +9,7 @@ const regions = [
 
 const years = _.range(2016, 2009, -1);
 
-let SELECTED_YEAR = 2011;
+let SELECTED_YEAR = 2010;
 d3.select('.selected-year-value').text(SELECTED_YEAR);
 
 //write the indicator codes for the
@@ -26,9 +26,9 @@ const parseData = (data) => {
         const temp = {};
         keys.forEach(key => {
            if(key.match(/\d{4}/)){ //if the key matches something with 4 digits
-               if(+key === 2017){
-                   temp[key] = +d[key];
-                }
+               //if(+key === 2017){
+                temp[key] = +d[key];
+                //}
            } else {
                if(key) {
                     temp[key] = d[key].trim();
@@ -187,6 +187,14 @@ const createYearDropdown = () => {
            SELECTED_YEAR = d;
            bubble.removeBubbleChart();
            bubble.createBubbleChart(window.allData.aphlisData, window.allData.accessEnergyData, window.country_code);
+
+           const country = allData.population.filter(k => k['Country Code'] === window.country_code)[0];
+           const format = d3.format(',');
+
+           if(country){
+                 d3.select('.total-population').text( format(country[SELECTED_YEAR]));
+                 d3.select('.population-year').text(`(${SELECTED_YEAR})`);
+            }
         });
 
 };

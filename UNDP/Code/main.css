@@ -107,14 +107,14 @@ svg {
     height: 100%;
 }
 
-.total-population, .access-electricity, .food-loss, .selected-year-value {
+.total-population, .access-electricity, .crop-facilities, .selected-year-value {
   font-size: 35px;
   color: #fff;
   font-weight: bolder;
   margin-bottom: 0px;
 }
 
-.population-title, .access-electricity-title, .food-loss-title {
+.population-title, .access-electricity-title, .crop-facilities-title {
   color: #737373;
 }
 
@@ -140,6 +140,7 @@ svg {
 .chart-container {
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 .details-container {
@@ -161,4 +162,9 @@ svg {
   color: #000;
   padding: 10px;
   font-size: 10px;
+}
+
+#bubble-chart svg {
+  margin-left: 20px;
+   margin-top: 50px;
 }
