@@ -1,0 +1,17 @@
+.africa { background-color: #636363 }
+.eastern-africa { background-color: #1b9e77 }
+.western-africa { background-color: #d95f02 }
+.central-africa { background-color: #7570b3 }
+.northern-africa { background-color: #e7298a  }
+.southern-africa { background-color: #e6ab02 }
+
+.africa { fill: #636363 }
+.eastern-africa { fill: #1b9e77 }
+.western-africa { fill: #d95f02 }
+.central-africa { fill: #7570b3 }
+.northern-africa { fill: #e7298a  }
+.southern-africa { fill: #e6ab02 }
+
+.hide-component { display: none }
+
+.box-not-selected { background-color: transparent }
