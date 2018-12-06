@@ -3,110 +3,54 @@
     <meta charset="utf-8">
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <title>D3 geo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.3.2/css/bootstrap-slider.min.css" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/vue.css" type="text/css" />
+    <link rel="stylesheet" href="css/vue-slider.css" type="text/css" />
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Exploring Food Loss in Africa</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <div id="vue-app"></div>
 
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Region - <span id="selected-region">All</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="region-menu">
-                  </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">
-                <div id="country-box-container"></div>
-            </div>
-            <!-- <div class="col-4">
-                <div id="country-details-container">
-                    <h2 class="country-name"></h2>
-                    <h4>Population</h4>
-                    <p>
-                        <span class="total-population"></span>
-                        <span class="population-year"></span>
-                    </p>
-                    <h4>Food Loss in Tonnes</h4>
-                    <p>
-                        <span class="food-loss"></span>
-                        <span class="food-loss-year"></span>
-                    </p>
-                    <h4>Adequate Existence of Crop Facilities</h4>
-                    <p>
-                        <span class="crop-facilities"></span>
-                        <span class="crop-facilities-year"></span>
-                    </p>
-                    <h4>Access To Electricity</h4>
-                    <ul class="access-electricity"></ul>
-                    <h4>Renewable Energy Projects</h4>
-                    <ul class="renewable-energy"></ul>
-                </div>
-            </div>  -->
-            <div class="col-4 details-container">
-                <div id="country-details-container">
-                    <div class="row">
-                        <div class="col-4">
-                            <p class="total-population"></p>
-                            <p class="population-title">Population <span class="population-year"></span></p>
-                        </div>
-                        <div class="col-1">
-                            <div class="separator"></div>
-                        </div>
-                        <div class="col-3">
-                            <!--<p class="access-electricity"></p>
-                            <p class="access-electricity-title">Total Access To Electricity (2016)</p> -->
-                            <p class="selected-year-value"></p>
-                            <div class="dropdown">
-                              <button class="btn btn-outline-secondary dropdown-toggle selected-year-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Year
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="year-menu">
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-1">
-                            <div class="separator"></div>
-                        </div>
-                        <div class="col-3">
-                            <div class="float-right">
-                                <p class="crop-facilities"></p>
-                                <p class="crop-facilities-title">Adequate Crop Storage Facilities <span class="food-loss-year"></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div id="bubble-chart"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 chart-container">
-                <div id="chart"></div>
-            </div>
-        </div>
-    </div>
+
     <div class="tooltip-d3"></div>
+
+
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js@1.14.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
-    <script src="helpers.js"></script>
-    <script src="map.js"></script>
-    <script src="bubblechart.js"></script>
+
+    <script src="js/helpers.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/bubblechart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex@3.0.1/dist/vuex.js"></script>
+    <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
+    <script src="vue/state/store.js"></script>
+    <script src="vue/constants.js"></script>
+    <script src="vue/services/fetchdata.js"></script>
+    <script src="vue/utils/parsedata.js"></script>
+
+    <script src="vue/libs/vue-slider-component.js"></script>
+    <script src="vue/components/navbar.js"></script>
+    <script src="vue/components/top_bar.js"></script>
+    <script src="vue/components/food_chart.js"></script>
+    <script src="vue/components/country_list.js"></script>
+    <script src="vue/components/maps_chart.js"></script>
+    <script src="vue/components/chart_bubble.js"></script>
+    <script src="vue/components/aphlis_info.js"></script>
+
+    <script src="vue/main.js"></script>
+
 </body>
