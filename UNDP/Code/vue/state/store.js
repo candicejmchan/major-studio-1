@@ -3,7 +3,7 @@ const SELECT_COUNTRY = 'SELECT COUNTRY';
 const SELECT_YEAR = 'SELECT YEAR';
 const SAVE_DATA = 'SAVE DATA';
 
-/* global Vuex _ utils d3 _ */
+/* global Vuex _ utils d3 _ constants */
 const store = new Vuex.Store({
     state: {
         region: 'All',
@@ -19,6 +19,14 @@ const store = new Vuex.Store({
     },
     getters: {
       getRegion: state => state.region,
+      getRegionClassName: state => {
+          const temp = state.countries.filter(d => d.country_code === state.country)[0];
+          if(temp){
+            return temp.className;
+          } else {
+              return '';
+          }
+      },
       getCountry: state => state.country,
       getYear: state => state.year,
       getAphlisData: state => _.filter(
@@ -31,16 +39,16 @@ const store = new Vuex.Store({
         const pop = _.filter(state.population, d => {
             return d['Country Code'] === state.country;
         })[0];
-        
+
         const format = d3.format(',');
         let popvalue;
-            
+
         if(pop) {
             popvalue =  format(pop[state.year]);
         } else {
             popvalue = '-';
         }
-        
+
         return {
             population: popvalue,
             year: state.year
@@ -61,7 +69,7 @@ const store = new Vuex.Store({
           })
           .sortBy(d => d.country_name)
           .value()
-      },      
+      },
       getYearRegionCountries: state => {
           const yeardata = utils.filterDataByYear(state.aphlisData, state.accessEnergyData, state.year);
           return _.chain(state.countries)
@@ -74,7 +82,7 @@ const store = new Vuex.Store({
           .sortBy(d => d.country_name)
           .value()
       }
-    },    
+    },
     mutations: {
         [SAVE_DATA] (state, payload) {
             switch(payload.type) {
@@ -111,7 +119,7 @@ const store = new Vuex.Store({
         },
         [SELECT_YEAR] (state, payload) {
             state.year = payload.year;
-        }        
+        }
     },
     actions: {
         [SAVE_DATA] (context, payload) {
@@ -125,6 +133,6 @@ const store = new Vuex.Store({
         },
         [SELECT_YEAR] (context, payload) {
             context.commit(SELECT_YEAR, payload);
-        }         
+        }
     }
 });

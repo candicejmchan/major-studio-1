@@ -1,7 +1,7 @@
 ((win) => {
-    
+
     const services = {};
-    
+
     /* global d3 */
     services.fetchData = () => {
       const popData = d3.csv('data/population.csv');
@@ -11,6 +11,6 @@
       const aphlisData = d3.json('data/data_2000.json');
       return Promise.all([popData, foodData, countries, accessEnergy, aphlisData ]);
     };
-    
+
     win.services = services;
 })(window)

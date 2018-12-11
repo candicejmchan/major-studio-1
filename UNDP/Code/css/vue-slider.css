@@ -20,7 +20,7 @@
   position: relative;
   display: block;
   border-radius: 15px;
-  background-color: #ccc;
+  background-color: #878686;
 }
 .vue-slider-component .vue-slider::after {
   content: '';
@@ -34,7 +34,7 @@
 .vue-slider-component .vue-slider-process {
   position: absolute;
   border-radius: 15px;
-  background-color: #3498db;
+  background-color: #FCFCFC;
   transition: all 0s;
   z-index: 1;
 }
@@ -83,7 +83,7 @@
   box-shadow: 0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.32);
 }
 .vue-slider-component .vue-slider-dot.vue-slider-dot-focus .vue-slider-dot-handle {
-  box-shadow: 0 0 2px 1px #3498db;
+  box-shadow: 0 0 2px 1px #FCFCFC;
 }
 .vue-slider-component .vue-slider-dot.vue-slider-dot-dragging {
   z-index: 5;
@@ -113,12 +113,12 @@
   font-size: 14px;
   white-space: nowrap;
   padding: 2px 5px;
-  min-width: 20px;
+  min-width: 15px;
   text-align: center;
-  color: #fff;
+  color: #060000  ;
   border-radius: 5px;
-  border: 1px solid #3498db;
-  background-color: #3498db;
+  border: 1px solid #FCFCFC;
+  background-color: #FCFCFC;
 }
 .vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-top {
   top: -9px;

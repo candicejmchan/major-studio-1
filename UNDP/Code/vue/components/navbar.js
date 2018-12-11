@@ -9,14 +9,14 @@ Vue.component('navbar', {
             <b-navbar-nav>
               <b-nav-item-dropdown text="Region" right>
                 <b-dropdown-item v-for="(region, index) in regions" :key="index" v-on:click="regionSelected(region)">{{region.name}}</b-dropdown-item>
-              </b-nav-item-dropdown>      
+              </b-nav-item-dropdown>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
     `,
     data: () => {
         return {
-            title: 'Exploring Food Loss in Africa',
+            title: 'Exploring Food Loss and Access to Electricity in Africa',
             selectedRegion: constants.regions[0],
             regions: constants.regions
         }

@@ -5,13 +5,74 @@
 .northern-africa { background-color: #e7298a  }
 .southern-africa { background-color: #e6ab02 }
 
-.africa { fill: #636363 }
-.eastern-africa { fill: #1b9e77 }
-.western-africa { fill: #d95f02 }
-.central-africa { fill: #7570b3 }
-.northern-africa { fill: #e7298a  }
-.southern-africa { fill: #e6ab02 }
+.africa-svg { fill: #636363 }
+.eastern-africa-svg { fill: #1b9e77 }
+.western-africa-svg { fill: #d95f02 }
+.central-africa-svg { fill: #7570b3 }
+.northern-africa-svg { fill: #e7298a  }
+.southern-africa-svg { fill: #e6ab02 }
+
+.first-page {
+    text-align: center;
+    color: #74c476;
+    padding-top: 150px;
+}
+
+.first-page .answer {
+    color: #74c476;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.first-page .paragraph {
+     color: #e1dfdf;
+    font-size: 20px;
+}
 
 .hide-component { display: none }
 
 .box-not-selected { background-color: transparent }
+
+.country-box-container {
+    height:100vh;
+    overflow-y:scroll;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.separator {
+  width: 1px;
+  height: 100px;
+  margin-left: 15px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+.aphlis-info {
+    margin: auto;
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.aphlis-info .header {
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #d9d9d9;
+}
+
+.aphlis-info .unit {
+    color: #969696;
+    font-weight: lighter;
+}
+
+.axis-label {
+    font-size: 12px;
+}
+
+.bubble .circle {
+    fill: #fff;
+}

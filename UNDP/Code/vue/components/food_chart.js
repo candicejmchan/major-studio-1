@@ -10,20 +10,20 @@ Vue.component('food-chart', {
               </div>
           </div>
           <div class="row">
-              <div class="col-12">
+              <div class="col-12" style="margin-top: 20px">
                     <vue-slider
                         v-if="countrySelected !== ''"
                         v-model="selectedYear"
                         v-bind="sliderParams"></vue-slider>
               </div>
           </div>
-        </div> 
+        </div>
     `,
     data: () => {
         /*  globals constants d3 */
         return {
             countrySelected: '',
-            selectedYear: 2015,
+            selectedYear: 2000,
             sliderParams: {
               width: '100%',
               tooltip: 'always',
@@ -35,16 +35,16 @@ Vue.component('food-chart', {
               },
               data: _.range(2000, 2017),
               piecewiseStyle: {
-                backgroundColor: '#ccc',
+                backgroundColor: '#FCFCFC',
                 visibility: 'visible',
                 width: '12px',
                 height: '12px'
               },
               piecewiseActiveStyle: {
-                backgroundColor: '#3498db'
+                backgroundColor: '#FCFCFC'
               },
               labelActiveStyle: {
-                color: '#3498db'
+                color: '#FCFCFC'
               }
             }
         }

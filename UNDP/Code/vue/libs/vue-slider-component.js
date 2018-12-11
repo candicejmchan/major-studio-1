@@ -33,13 +33,13 @@ Vue.component('vue-slider', {
           @touchstart="moveStart($event, 0)"
         >
           <slot name="dot" :value="val[0]" :index="0" :disabled="disabledArray[0]">
-            <div 
+            <div
               class="vue-slider-dot-handle"
               :style="[
                 (!boolDisabled && disabledArray[0])
                 ? disabledDotStyles[0]
                 : null,
-                sliderStyles[0], 
+                sliderStyles[0],
                 focusFlag && focusSlider === 0 ? focusStyles[0]: null
               ]"
             ></div>
@@ -67,13 +67,13 @@ Vue.component('vue-slider', {
           @touchstart="moveStart($event, 1)"
         >
           <slot name="dot" :value="val[1]" :index="1" :disabled="disabledArray[1]">
-            <div 
+            <div
               class="vue-slider-dot-handle"
               :style="[
                 (!boolDisabled && disabledArray[1])
                 ? disabledDotStyles[1]
                 : null,
-                sliderStyles[1], 
+                sliderStyles[1],
                 focusFlag && focusSlider === 1 ? focusStyles[1]: null
               ]"
             ></div>
@@ -102,7 +102,7 @@ Vue.component('vue-slider', {
           @touchstart="moveStart"
         >
           <slot name="dot" :value="val" :disabled="boolDisabled">
-            <div 
+            <div
               class="vue-slider-dot-handle"
               :style="[
                 sliderStyles,
@@ -176,7 +176,7 @@ Vue.component('vue-slider', {
     </div>
     <input v-if="!isRange && !data" class="vue-slider-sr-only" type="range" v-model="val" :min="min" :max="max" />
     </div>
-  </div>    
+  </div>
     `,
     props: {
       width: {
@@ -1124,5 +1124,5 @@ Vue.component('vue-slider', {
     beforeDestroy () {
       this.isComponentExists = false
       this.unbindEvents()
-    }    
+    }
 });

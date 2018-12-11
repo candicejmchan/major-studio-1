@@ -4,7 +4,7 @@ Vue.component('country-box', {
     template: `
         <div class="col-2">
             <div class="country-box-container">
-                <div v-for="(country, index) in countries" :key="index" 
+                <div v-for="(country, index) in countries" :key="index"
                     class="country-box"
                      :class="[country.className, { 'box-not-selected': !(country.country_code === selectedCountryCode) }]"
                      v-on:click="countrySelected(country)"
@@ -27,7 +27,7 @@ Vue.component('country-box', {
         },
         getCountry: function (newVal, oldVal) {
             this.selectedCountryCode = newVal;
-        },         
+        },
     },
     computed: {
           ...Vuex.mapGetters(['getCountry', 'getYearRegionCountries'])

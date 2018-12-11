@@ -1,19 +1,19 @@
 ((win) => {
-    
+
     const utils = {};
-    
+
     utils.parseCountryData = (data) => {
         data.objects.countries.geometries = data.objects.countries.geometries
             .filter(d => d.properties.CONTINENT === 'Africa');
         return data;
     };
-    
+
     utils.getCountryCodes = (countryData) => {
         return _.map(countryData.objects.countries.geometries, d => {
-            return d.properties.ADM0_A3;//get countries 
+            return d.properties.ADM0_A3;//get countries
         });
     };
-    
+
     utils.getCountries = (countryData) => {
         return _.map(countryData.objects.countries.geometries, d => {
             const reg = constants.regions.filter(k => k.value.indexOf(d.properties.SUBREGION) !== -1)[0];
@@ -26,8 +26,8 @@
                 className: reg.className
             };
         });
-    };    
-    
+    };
+
     /* global d3 */
     utils.parsePopulation = (data, countryCodes) => {
         let population = data.map(d => {
@@ -40,14 +40,14 @@
                    if(key) {
                         temp[key] = d[key].trim();
                    }
-               } 
+               }
             });
             return temp;
         });
         population = population.filter(d => countryCodes.indexOf(d['Country Code']) !== -1);
         return population;
     };
-    
+
     utils.parseFoodData = (data, population) => {
         let foodData = data.map(d => {
           const temp = {
@@ -57,14 +57,14 @@
               country: d['Country'].trim(),
               region: d['Region'].trim()
           };
-           
+
            //use countries that appear from the filtered population countries
            const country = population.filter(k => k['Country Name'] === temp.country);
            temp.country_code = country.length > 0 ? country[0]['Country Code'] : null;
            return temp;
         });
-        
-        //lodash - take the most recent year from all the years 
+
+        //lodash - take the most recent year from all the years
         /* global _ */
         foodData = _.chain(foodData)
             .groupBy('country_code')
@@ -92,17 +92,17 @@
             })
             .flatten()
             .value();
-        
+
         return foodData;
     };
-    
+
     utils.parseAccessEnergyData = (data, countryCodes) => {
-        
+
         let accessEnergyData = data.filter(d => {
             return countryCodes.indexOf(d['Country Code']) !== -1 &&
                 d['Indicator Code'] === '1.1_ACCESS.ELECTRICITY.TOT';
         });
-        
+
         accessEnergyData = accessEnergyData.map(d => {
             const keys = _.keys(d);
             const temp = {};
@@ -127,24 +127,29 @@
         });
         return accessEnergyData;
     };
-    
-    utils.parseAphlisData = (data, population) => {
+
+    utils.parseAphlisData = (data, population, countries) => {
         const aphlisData = data.map(row => {
            const country = population.filter(k => {
                if(row.country.indexOf('Congo') !== -1 && k['Country Name'].indexOf('Congo') !== -1) {
                    return true;
                } else {
-                   return k['Country Name'] === row.country;   
+                   return k['Country Name'] === row.country;
                }
            });
            if(country.length > 0){
                row.country_code = country[0]['Country Code'];
+               const coun = countries.filter(d => d.country_code === country[0]['Country Code'])[0];
+               if(coun){
+                    row.region = coun.region;
+                    row.className = coun.className;
+               }
            }
            return row;
         });
         return aphlisData;
     };
-    
+
     // used in vue chart_bubble.js
     utils.filterDataByYear = (alphisData, accessEnergyData, selected_year) => {
         const alphis = _.chain(alphisData)
@@ -152,33 +157,33 @@
             .map(d => {
                 d.total = 0;
                 _.keys(d)
-                    .filter(key => ['country_code', 'country'].indexOf(key) === -1)
+                    .filter(key => ['country_code', 'country', 'className', 'region'].indexOf(key) === -1)
                     .forEach(key => {
                         d.total += d[key];
                     });
-    
-                
+
+
                 let energy = accessEnergyData.filter(k => {
                     return k['Country Code'] === d.country_code;
-                })[0]; /// look here and check the try and catch 
-                
+                })[0]; /// look here and check the try and catch
+
                 try {
                     const yeardata = energy.yeardata.filter(k => k.year === selected_year)[0];
-                
+
                     if(energy) {
                         d.access_electricity = yeardata.value;
                     }
                 } catch(err) {
                     d.access_electricity = 0;
                 }
-                
+
                 return d;
             })
             .value();
-        
+
         return alphis;
-    }     
-    
+    }
+
     win.utils = utils;
-    
+
 })(window)

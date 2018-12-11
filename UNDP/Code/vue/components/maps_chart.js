@@ -9,10 +9,10 @@ Vue.component('maps-chart', {
                 </div>
             </div>
             <div class="row" v-if="selectedCountryCode !== ''">
-                <div class="col-12">            
+                <div class="col-12">
                     <aphlis-info></aphlis-info>
                 </div>
-            </div>                
+            </div>
         </div>
     `,
     props: {
@@ -27,13 +27,19 @@ Vue.component('maps-chart', {
             margin: constants.map.margin,
             width: constants.map.width,
             height: constants.map.height,
+            height_medium: constants.map.height_medium,
+            height_small: constants.map.height_small,
             svg: '',
             countriesSelector: '',
             path_big: d3.geoPath().projection(
                 d3.geoMercator().scale(430).translate([constants.map.width - 400, 290])
             ),
-            path_small: d3.geoPath().projection(
+            path_medium: d3.geoPath().projection(
                 d3.geoMercator().scale(280).translate([constants.map.width - 450, 230])
+            ),
+            path_small: d3.geoPath().projection(
+                // d3.geoMercator().scale(280).translate([constants.map.width - 450, 230])
+                d3.geoMercator().scale(170).translate([constants.map.width - 450, 100])
             )
         }
     },
@@ -51,7 +57,7 @@ Vue.component('maps-chart', {
             this.countries = newVal;
             this.countriesSelector.attr('class', this.getRegionClass);
             this.changeMapSize();
-        },        
+        },
     },
     computed: {
         ...Vuex.mapGetters([
@@ -59,7 +65,7 @@ Vue.component('maps-chart', {
             'getCountryCodes',
             'getRegionCountries'
         ])
-    },    
+    },
     mounted() {
         this.element = this.$refs.chart;
         this.initChart();
@@ -75,7 +81,7 @@ Vue.component('maps-chart', {
         },
         drawChart(countrydata) {
             const topoData = topojson.feature(countrydata, countrydata.objects.countries).features;
-        
+
             this.countriesSelector = this.svg.append('g')
                 .attr('class', 'countries')
                 .selectAll('path')
@@ -98,12 +104,18 @@ Vue.component('maps-chart', {
         setMapSize(mapSize) {
             switch (mapSize) {
                 case 'big':
-                    this.svg.attr('height', 600);
+                    d3.select(this.element).select('svg')
+                        .attr('height', this.height + this.margin.top + this.margin.bottom);
                     this.countriesSelector.attr('d', this.path_big);
                     break;
+                case 'medium':
+                    d3.select(this.element).select('svg')
+                        .attr('height', this.height_medium + this.margin.top + this.margin.bottom);
+                    this.countriesSelector.attr('d', this.path_medium);
+                    break;
                 case 'small':
-                    this.svg.attr('height', 450);
-                    console.log('###');
+                    d3.select(this.element).select('svg')
+                        .attr('height', this.height_small + this.margin.top + this.margin.bottom);
                     this.countriesSelector.attr('d', this.path_small);
                     break;
                 default:
@@ -125,15 +137,15 @@ Vue.component('maps-chart', {
             const className = constants.regions.filter(k => k.value.indexOf(reg) !== -1)[0].className;
             if(!this.selectedCountryCode){
                 if(country_codes.indexOf(country_code) !== -1){
-                    return `africa ${className} ${country_code}-map`;
+                    return `africa ${className}-svg ${country_code}-map`;
                 } else {
                     return `africa ${country_code}-map`;
-                } 
+                }
             } else {
                 if(country_code === this.selectedCountryCode) {
-                    return `africa ${className} ${country_code}-map`;
+                    return `africa ${className}-svg ${country_code}-map`;
                 } else {
-                    return `africa reduce-opacity ${className} ${country_code}-map`;
+                    return `africa reduce-opacity ${className}-svg ${country_code}-map`;
                 }
             }
         }
