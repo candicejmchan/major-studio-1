@@ -8,7 +8,7 @@ const store = new Vuex.Store({
     state: {
         region: 'All',
         country: '',
-        year: 2015,
+        year: 2000,
         countryData: {},
         countryCodes: [],
         population: [],
